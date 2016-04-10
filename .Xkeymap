@@ -1181,27 +1181,39 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     name[group1]="English (US, alternative international)";
 
     key  <ESC> {         [          Escape ] };
-    key <AE01> {         [               1,          exclam ] };
-    key <AE02> {         [               2,              at ] };
-    key <AE03> {         [               3,      numbersign ] };
-    key <AE04> {         [               4,          dollar ] };
+    key <AE01> {         [          dollar,               1 ] };
+    key <AE02> {
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [          eacute,               2,              at,          Eacute ]
+    };
+    key <AE03> {
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [      underscore,               3,      numbersign,        NoSymbol ]
+    };
+    key <AE04> {
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [      apostrophe,               4,        NoSymbol,        NoSymbol ]
+    };
     key <AE05> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               5,         percent,        EuroSign,        NoSymbol ]
+        symbols[Group1]= [         percent,               5,        EuroSign,        NoSymbol ]
     };
     key <AE06> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               6, dead_circumflex,     asciicircum,     asciicircum ]
+        symbols[Group1]= [ dead_circumflex,               6,     asciicircum,     asciicircum ]
     };
-    key <AE07> {         [               7,       ampersand ] };
-    key <AE08> {         [               8,        asterisk ] };
+    key <AE07> {
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [          egrave,               7,       ampersand,          Egrave ]
+    };
+    key <AE08> {         [        asterisk,               8 ] };
     key <AE09> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               9,       parenleft, leftsinglequotemark,      dead_breve ]
+        symbols[Group1]= [       parenleft,               9, leftsinglequotemark,      dead_breve ]
     };
     key <AE10> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               0,      parenright, rightsinglequotemark,  dead_abovering ]
+        symbols[Group1]= [      parenright,               0, rightsinglequotemark,  dead_abovering ]
     };
     key <AE11> {
         type= "FOUR_LEVEL",
@@ -1238,16 +1250,16 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               y,               Y ]
     };
     key <AD07> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               u,               U ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               u,               U,          ugrave,          Ugrave ]
     };
     key <AD08> {
         type= "ALPHABETIC",
         symbols[Group1]= [               i,               I ]
     };
     key <AD09> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               o,               O ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               o,               O,              oe,              OE ]
     };
     key <AD10> {
         type= "ALPHABETIC",
@@ -1258,8 +1270,8 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               a,               A ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               a,               A,          agrave,          Agrave ]
     };
     key <AC02> {
         type= "ALPHABETIC",
@@ -1295,15 +1307,15 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AC10> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [       semicolon,           colon,     dead_ogonek,  dead_diaeresis ]
+        symbols[Group1]= [           colon,       semicolon,      dead_grave,      dead_acute ]
     };
     key <AC11> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [      dead_acute,  dead_diaeresis,      apostrophe,        quotedbl ]
+        symbols[Group1]= [        quotedbl,          exclam, dead_circumflex,  dead_diaeresis ]
     };
     key <TLDE> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [      dead_grave,      dead_tilde,           grave,      asciitilde ]
+        symbols[Group1]= [     asciicircum,      asciitilde,           grave,           acute ]
     };
     key <LFSH> {         [         Shift_L ] };
     key <BKSL> {         [       backslash,             bar ] };
@@ -1316,8 +1328,8 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               x,               X ]
     };
     key <AB03> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               c,               C ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               c,               C,        ccedilla,        Ccedilla ]
     };
     key <AB04> {
         type= "ALPHABETIC",
