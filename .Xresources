@@ -1,0 +1,23 @@
+*background: black
+*foreground: white
+
+*color0: #353535
+*color4: #6666ff
+*color12: #6496ed
+
+Xft*antialias: 1
+Xft*autohint: 0
+Xft*dpi: 96
+Xft*hinting: 1
+Xft*hintstyle: hintful
+Xft*lcdfilter: lcddefault
+Xft*rgba: rgb
+
+URxvt*scrollBar: false
+URxvt*letterSpace: -1
+Rxvt*font: xft:Inconsolata:size=10
+URxvt*perl-ext: default,url-select
+URxvt*keysym.M-u: perl:url-select:select_next
+URxvt*url-select.underline: true
+URxvt*url-select.launcher: /usr/bin/firefox
+URxvt*urgentOnBell: true
