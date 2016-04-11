@@ -1200,7 +1200,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AE06> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [ dead_circumflex,               6,     asciicircum,     asciicircum ]
+        symbols[Group1]= [        quotedbl,               6,     asciicircum,     asciicircum ]
     };
     key <AE07> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
@@ -1217,11 +1217,11 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AE11> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [           minus,      underscore,     dead_macron,   dead_belowdot ]
+        symbols[Group1]= [ dead_circumflex,      dead_grave,       dead_diaeresis,      dead_acute ]
     };
     key <AE12> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [           equal,            plus, dead_doubleacute,       dead_horn ]
+        symbols[Group1]= [             bar,       ampersand, dead_doubleacute,       dead_horn ]
     };
     key <BKSP> {         [       BackSpace,       BackSpace ] };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
@@ -1265,8 +1265,8 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         type= "ALPHABETIC",
         symbols[Group1]= [               p,               P ]
     };
-    key <AD11> {         [     bracketleft,       braceleft ] };
-    key <AD12> {         [    bracketright,      braceright ] };
+    key <AD11> {         [       parenleft,     bracketleft ] };
+    key <AD12> {         [      parenright,    bracketright ] };
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
@@ -1311,14 +1311,14 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AC11> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [        quotedbl,          exclam, dead_circumflex,  dead_diaeresis ]
+        symbols[Group1]= [           minus,        asterisk,         percent,  dead_diaeresis ]
     };
     key <TLDE> {
         type= "FOUR_LEVEL",
         symbols[Group1]= [     asciicircum,      asciitilde,           grave,           acute ]
     };
     key <LFSH> {         [         Shift_L ] };
-    key <BKSL> {         [       backslash,             bar ] };
+    key <BKSL> {         [           equal,            plus ] };
     key <AB01> {
         type= "ALPHABETIC",
         symbols[Group1]= [               z,               Z ]
@@ -1349,15 +1349,27 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AB08> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [           comma,            less,    dead_cedilla,      dead_caron ]
+        symbols[Group1]= [           comma,        question,    dead_cedilla,      dead_caron ]
     };
     key <AB09> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [          period,         greater,   dead_abovedot, dead_circumflex ]
+        symbols[Group1]= [          period,          exclam,   dead_abovedot, dead_circumflex ]
     };
     key <AB10> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [           slash,        question,       dead_hook,       dead_hook ]
+        symbols[Group1]= [           slash,       backslash,       dead_hook,       dead_hook ]
+    };
+    key <LSGT> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           equal,            plus,       backslash,             bar ]
+    };
+    key <I172> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [            less,       braceleft,   guillemotleft,   XF86AudioPlay ]
+    };
+    key <COMP> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [         greater,      braceright,  guillemotright,            Menu ]
     };
     key <RTSH> {         [         Shift_R ] };
     key <KPMU> {
@@ -1365,7 +1377,10 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [     KP_Multiply,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
     };
     key <LALT> {         [           Alt_L,          Meta_L ] };
-    key <SPCE> {         [           space ] };
+    key <SPCE> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           space,           space,      underscore,    nobreakspace ]
+    };
     key <CAPS> {         [       Caps_Lock ] };
     key <FK01> {
         type= "CTRL+ALT",
@@ -1432,10 +1447,6 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         type= "ONE_LEVEL",
         symbols[Group1]= [ ISO_Level3_Shift ]
     };
-    key <LSGT> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [       backslash,             bar,       backslash,             bar ]
-    };
     key <FK11> {
         type= "CTRL+ALT",
         symbols[Group1]= [             F11,             F11,             F11,             F11, XF86Switch_VT_11 ]
@@ -1490,7 +1501,6 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <HJCV> {         [    Hangul_Hanja ] };
     key <LWIN> {         [         Super_L ] };
     key <RWIN> {         [         Super_R ] };
-    key <COMP> {         [            Menu ] };
     key <STOP> {         [          Cancel ] };
     key <AGAI> {         [            Redo ] };
     key <PROP> {         [        SunProps ] };
@@ -1524,7 +1534,6 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <I169> {         [       XF86Eject ] };
     key <I170> {         [       XF86Eject,       XF86Eject ] };
     key <I171> {         [   XF86AudioNext ] };
-    key <I172> {         [   XF86AudioPlay,  XF86AudioPause ] };
     key <I173> {         [   XF86AudioPrev ] };
     key <I174> {         [   XF86AudioStop,       XF86Eject ] };
     key <I175> {         [ XF86AudioRecord ] };
