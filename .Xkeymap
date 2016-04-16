@@ -615,6 +615,20 @@ xkb_types "complete" {
         level_name[Level3]= "Alt Base";
         level_name[Level4]= "Shift Alt";
     };
+    type "PC_SUPER_LEVEL8" {
+        modifiers= Shift+LevelThree+Mod4;
+        map[Shift]= Level2;
+        map[LevelThree]= Level3;
+        map[Shift+LevelThree]= Level4;
+        map[Mod4]= Level5;
+        map[Shift+Mod4]= Level6;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Alt Base";
+        level_name[Level4]= "Shift Alt";
+        level_name[Level5]= "Super Base";
+        level_name[Level6]= "Shift Super";
+    };
     type "FOUR_LEVEL_MIXED_KEYPAD" {
         modifiers= Shift+NumLock+LevelThree;
         map[Shift+NumLock]= Level1;
@@ -735,7 +749,7 @@ xkb_compatibility "complete" {
     };
     interpret Super_L+AnyOf(all) {
         virtualModifier= Super;
-        action= SetMods(modifiers=modMapMods,clearLocks);
+        action= SetMods(modifiers=Super,clearLocks);
     };
     interpret Super_R+AnyOf(all) {
         virtualModifier= Super;
@@ -1289,16 +1303,16 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               s,               S ]
     };
     key <AC03> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               h,               H ]
+        type= "PC_SUPER_LEVEL8",
+        symbols[Group1]= [               h,               H,          eacute,          Eacute, x, X ]
     };
     key <AC04> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               t,               T ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               t,               T,          egrave,          Egrave ]
     };
     key <AC05> {
         type= "ALPHABETIC",
-        symbols[Group1]= [               g,               G ]
+        symbols[Group1]= [               g,               G,     ecircumflex,     Ecircumflex ]
     };
     key <AC06> {
         type= "ALPHABETIC",
@@ -1318,11 +1332,11 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AC10> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               i,               I,              icircum,    Icircum ]
+        symbols[Group1]= [               i,               I,     icircumflex,     Icircumflex ]
     };
     key <AC11> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [           minus,        asterisk,         percent,  dead_diaeresis ]
+        symbols[Group1]= [     apostrophe,         quotedbl,           minus,          emdash ]
     };
     key <AB01> {
         type= "ALPHABETIC",
@@ -1425,25 +1439,25 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <NMLK> {         [        Num_Lock ] };
     key <SCLK> {         [     Scroll_Lock ] };
-    key  <KP7> {         [         KP_Home,            KP_7 ] };
-    key  <KP8> {         [           KP_Up,            KP_8 ] };
-    key  <KP9> {         [        KP_Prior,            KP_9 ] };
+    key  <KP7> {         [            KP_7,         KP_Home ] };
+    key  <KP8> {         [            KP_8,           KP_Up ] };
+    key  <KP9> {         [            KP_9,        KP_Prior ] };
     key <KPSU> {
         type= "CTRL+ALT",
         symbols[Group1]= [     KP_Subtract,     KP_Subtract,     KP_Subtract,     KP_Subtract,  XF86Prev_VMode ]
     };
-    key  <KP4> {         [         KP_Left,            KP_4 ] };
-    key  <KP5> {         [        KP_Begin,            KP_5 ] };
-    key  <KP6> {         [        KP_Right,            KP_6 ] };
+    key  <KP4> {         [            KP_4,         KP_Left ] };
+    key  <KP5> {         [            KP_5,        KP_Begin ] };
+    key  <KP6> {         [            KP_6,        KP_Right ] };
     key <KPAD> {
         type= "CTRL+ALT",
         symbols[Group1]= [          KP_Add,          KP_Add,          KP_Add,          KP_Add,  XF86Next_VMode ]
     };
-    key  <KP1> {         [          KP_End,            KP_1 ] };
-    key  <KP2> {         [         KP_Down,            KP_2 ] };
-    key  <KP3> {         [         KP_Next,            KP_3 ] };
-    key  <KP0> {         [       KP_Insert,            KP_0 ] };
-    key <KPDL> {         [       KP_Delete,      KP_Decimal ] };
+    key  <KP1> {         [            KP_1,          KP_End ] };
+    key  <KP2> {         [            KP_2,         KP_Down ] };
+    key  <KP3> {         [            KP_3,         KP_Next ] };
+    key  <KP0> {         [            KP_0,       KP_Insert ] };
+    key <KPDL> {         [      KP_Decimal,       KP_Delete ] };
     key <LVL3> {
         type= "ONE_LEVEL",
         symbols[Group1]= [ ISO_Level3_Shift ]
@@ -1598,6 +1612,30 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <I244> {         [     XF86Battery ] };
     key <I245> {         [   XF86Bluetooth ] };
     key <I246> {         [        XF86WLAN ] };
+    key <AB11> {         [        5 ] };
+    key <JPCM> {         [        5 ] };
+    key <I120> {         [        5 ] };
+    key <AE13> {         [        5 ] };
+    key <I149> {         [        5 ] };
+    key <I154> {         [        5 ] };
+    key <I168> {         [        5 ] };
+    key <I178> {         [        5 ] };
+    key <I183> {         [        5 ] };
+    key <I184> {         [        5 ] };
+    key <FK19> {         [        5 ] };
+    key <FK24> {         [        5 ] };
+    key <I217> {         [        5 ] };
+    key <I219> {         [        5 ] };
+    key <I221> {         [        5 ] };
+    key <I222> {         [        5 ] };
+    key <I230> {         [        5 ] };
+    key <I247> {         [        5 ] };
+    key <I248> {         [        5 ] };
+    key <I249> {         [        5 ] };
+    key <I250> {         [        5 ] };
+    key <I251> {         [        5 ] };
+    key <I252> {         [        5 ] };
+    key <I253> {         [        5 ] };
     modifier_map Control { <LCTL> };
     modifier_map Shift { <LFSH> };
     modifier_map Shift { <RTSH> };
