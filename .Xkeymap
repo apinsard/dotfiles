@@ -1303,8 +1303,8 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               s,               S ]
     };
     key <AC03> {
-        type= "PC_SUPER_LEVEL8",
-        symbols[Group1]= [               h,               H,          eacute,          Eacute, x, X ]
+        type= "FOUR_LEVEL_SEMIALPHABETIC",
+        symbols[Group1]= [               h,               H,          eacute,          Eacute ]
     };
     key <AC04> {
         type= "FOUR_LEVEL_SEMIALPHABETIC",

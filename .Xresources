@@ -21,3 +21,5 @@ URxvt*keysym.M-u: perl:url-select:select_next
 URxvt*url-select.underline: true
 URxvt*url-select.launcher: /usr/bin/firefox
 URxvt*urgentOnBell: true
+
+URxvt*keysym.Mod4-h: \010
