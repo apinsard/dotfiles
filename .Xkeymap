@@ -1369,7 +1369,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AC04> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               t,               T,          egrave,          Egrave ]
+        symbols[Group1]= [               t,               T,       parenleft,       parenleft ]
     };
     key <AC05> {
         type= "FOUR_LEVEL",
@@ -1380,7 +1380,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               y,               Y ]
     };
     key <AC07> {
-        type= "ALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [               n,               N,      parenright,      parenright ]
     };
     key <AC08> {
