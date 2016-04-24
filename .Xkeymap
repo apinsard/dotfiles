@@ -1195,208 +1195,21 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     name[group1]="English (US, alternative international)";
 
     key  <ESC> {         [          Escape ] };
-    key <TLDE> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [     asciicircum,      asciitilde,           grave,           acute ]
-    };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
     key <RTSH> {         [         Shift_R ] };
     key <RCTL> {         [       Control_R ] };
+
+    key <DELE> {         [          Delete ] };
     key <BKSP> {         [       BackSpace,       BackSpace ] };
     key <RTRN> {         [          Return ] };
     key <SPCE> {
         type= "FOUR_LEVEL",
         symbols[Group1]= [           space,           space,      underscore,    nobreakspace ]
     };
+
     key <LFSH> {         [         Shift_L ] };
     key <LCTL> {         [       Control_L ] };
-    key <AE01> {         [          dollar,               1 ] };
-    key <AE02> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          eacute,               2,              at,          Eacute ]
-    };
-    key <AE03> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      underscore,               3,      numbersign,        NoSymbol ]
-    };
-    key <AE04> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [      apostrophe,               4,        NoSymbol,        NoSymbol ]
-    };
-    key <AE05> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [         percent,               5,        EuroSign,        NoSymbol ]
-    };
-    key <AE06> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [        quotedbl,               6,     asciicircum,     asciicircum ]
-    };
-    key <AE07> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [          egrave,               7,       ampersand,          Egrave ]
-    };
-    key <AE08> {         [        asterisk,               8 ] };
-    key <AE09> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [       parenleft,               9, leftsinglequotemark,      dead_breve ]
-    };
-    key <AE10> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [      parenright,               0, rightsinglequotemark,  dead_abovering ]
-    };
-    key <AE11> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [ dead_circumflex,      dead_grave,       dead_diaeresis,      dead_acute ]
-    };
-    key <AE12> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [             bar,       ampersand, dead_doubleacute,       dead_horn ]
-    };
-    key <AD01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               q,               Q ]
-    };
-    key <AD02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               d,               D ]
-    };
-    key <AD03> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               r,               R ]
-    };
-    key <AD04> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               w,               W ]
-    };
-    key <AD05> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               b,               B ]
-    };
-    key <AD06> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               j,               J ]
-    };
-    key <AD07> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               f,               F ]
-    };
-    key <AD08> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               u,               U,          ugrave,          Ugrave ]
-    };
-    key <AD09> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               p,               P ]
-    };
-    key <AD10> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           colon,       semicolon,      dead_grave,      dead_acute ]
-    };
-    key <AD11> {         [       parenleft,     bracketleft ] };
-    key <AD12> {         [      parenright,    bracketright ] };
-    key <AC01> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               a,               A,          agrave,          Agrave ]
-    };
-    key <AC02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               s,               S ]
-    };
-    key <AC03> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               h,               H,          eacute,          Eacute ]
-    };
-    key <AC04> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               t,               T,          egrave,          Egrave ]
-    };
-    key <AC05> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               g,               G,     ecircumflex,     Ecircumflex ]
-    };
-    key <AC06> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               y,               Y ]
-    };
-    key <AC07> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               n,               N ]
-    };
-    key <AC08> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               e,               E,        EuroSign,            cent ]
-    };
-    key <AC09> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               o,               O,              oe,              OE ]
-    };
-    key <AC10> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               i,               I,     icircumflex,     Icircumflex ]
-    };
-    key <AC11> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [     apostrophe,         quotedbl,           minus,          emdash ]
-    };
-    key <AB01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               z,               Z ]
-    };
-    key <AB02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               x,               X ]
-    };
-    key <AB03> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               m,               M ]
-    };
-    key <AB04> {
-        type= "FOUR_LEVEL_SEMIALPHABETIC",
-        symbols[Group1]= [               c,               C,        ccedilla,        Ccedilla ]
-    };
-    key <AB05> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               v,               V ]
-    };
-    key <AB06> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               k,               K ]
-    };
-    key <AB07> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               l,               L ]
-    };
-    key <AB08> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           comma,        question,    dead_cedilla,      dead_caron ]
-    };
-    key <AB09> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [          period,          exclam,   dead_abovedot, dead_circumflex ]
-    };
-    key <AB10> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           slash,       backslash,       dead_hook,       dead_hook ]
-    };
-    key <BKSL> {         [           equal,            plus ] };
-    key <I172> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [            less,       braceleft,   guillemotleft,   XF86AudioPlay ]
-    };
-    key <COMP> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [         greater,      braceright,  guillemotright,            Menu ]
-    };
-    key <LSGT> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           equal,            plus,       backslash,             bar ]
-    };
-    key <KPMU> {
-        type= "CTRL+ALT",
-        symbols[Group1]= [     KP_Multiply,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
-    };
-    key <LALT> {         [           Alt_L,          Meta_L ] };
-    key <CAPS> {         [       Caps_Lock ] };
+
     key <FK01> {
         type= "CTRL+ALT",
         symbols[Group1]= [              F1,              F1,              F1,              F1, XF86Switch_VT_1 ]
@@ -1437,31 +1250,6 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         type= "CTRL+ALT",
         symbols[Group1]= [             F10,             F10,             F10,             F10, XF86Switch_VT_10 ]
     };
-    key <NMLK> {         [        Num_Lock ] };
-    key <SCLK> {         [     Scroll_Lock ] };
-    key  <KP7> {         [            KP_7,         KP_Home ] };
-    key  <KP8> {         [            KP_8,           KP_Up ] };
-    key  <KP9> {         [            KP_9,        KP_Prior ] };
-    key <KPSU> {
-        type= "CTRL+ALT",
-        symbols[Group1]= [     KP_Subtract,     KP_Subtract,     KP_Subtract,     KP_Subtract,  XF86Prev_VMode ]
-    };
-    key  <KP4> {         [            KP_4,         KP_Left ] };
-    key  <KP5> {         [            KP_5,        KP_Begin ] };
-    key  <KP6> {         [            KP_6,        KP_Right ] };
-    key <KPAD> {
-        type= "CTRL+ALT",
-        symbols[Group1]= [          KP_Add,          KP_Add,          KP_Add,          KP_Add,  XF86Next_VMode ]
-    };
-    key  <KP1> {         [            KP_1,          KP_End ] };
-    key  <KP2> {         [            KP_2,         KP_Down ] };
-    key  <KP3> {         [            KP_3,         KP_Next ] };
-    key  <KP0> {         [            KP_0,       KP_Insert ] };
-    key <KPDL> {         [      KP_Decimal,       KP_Delete ] };
-    key <LVL3> {
-        type= "ONE_LEVEL",
-        symbols[Group1]= [ ISO_Level3_Shift ]
-    };
     key <FK11> {
         type= "CTRL+ALT",
         symbols[Group1]= [             F11,             F11,             F11,             F11, XF86Switch_VT_11 ]
@@ -1469,6 +1257,230 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <FK12> {
         type= "CTRL+ALT",
         symbols[Group1]= [             F12,             F12,             F12,             F12, XF86Switch_VT_12 ]
+    };
+    key <NMLK> {         [        Num_Lock ] };
+
+    key <TLDE> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [     asciicircum,      asciitilde,           grave,           acute ]
+    };
+    key <AE01> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          dollar,        EuroSign,            cent,        sterling ]
+    };
+    key <AE02> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          eacute,          Eacute,      dead_acute,       copyright ]
+    };
+    key <AE03> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      underscore,      numbersign,      numbersign,        NoSymbol ]
+    };
+    key <AE04> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [     ecircumflex,     Ecircumflex, dead_circumflex,  dead_diaeresis ]
+    };
+    key <AE05> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      numbersign,         percent,        EuroSign,        NoSymbol ]
+    };
+    key <AE06> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           minus,          emdash,     asciicircum,     asciicircum ]
+    };
+    key <AE07> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          egrave,          Egrave,       ampersand,          Egrave ]
+    };
+    key <AE08> {         [        asterisk,              at ] };
+    key <AE09> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [        ccedilla,        Ccedilla, leftsinglequotemark,      dead_breve ]
+    };
+    key <AE10> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [      parenright,               0, rightsinglequotemark,  dead_abovering ]
+    };
+    key <AE11> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [ dead_circumflex,      dead_grave,       dead_diaeresis,      dead_acute ]
+    };
+    key <AE12> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [             bar,       ampersand, dead_doubleacute,       dead_horn ]
+    };
+    key <AD01> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               q,               Q ]
+    };
+    key <AD02> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               d,               D ]
+    };
+    key <AD03> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               r,               R,     bracketleft,        NoSymbol ]
+    };
+    key <AD04> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               w,               W ]
+    };
+    key <AD05> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               b,               B ]
+    };
+    key <AD06> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               j,               J ]
+    };
+    key <AD07> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               f,               F,       parenleft,       parenleft ]
+    };
+    key <AD08> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               u,               U,    bracketright,        NoSymbol ]
+    };
+    key <AD09> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               p,               P ]
+    };
+    key <AD10> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           colon,       semicolon,      dead_grave,      dead_acute ]
+    };
+    key <AD11> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [ dead_circumflex,      dead_grave,  dead_diaeresis,      dead_acute ]
+    };
+
+    key <AD12> {         [      parenright,    bracketright ] };
+    key <AC01> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               a,               A,          agrave,          Agrave ]
+    };
+    key <AC02> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               s,               S ]
+    };
+    key <AC03> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               h,               H,       braceleft,          Eacute ]
+    };
+    key <AC04> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               t,               T,          egrave,          Egrave ]
+    };
+    key <AC05> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               g,               G,       parenleft,       parenleft ]
+    };
+    key <AC06> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               y,               Y ]
+    };
+    key <AC07> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               n,               N,      parenright,      parenright ]
+    };
+    key <AC08> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               e,               E,      braceright,            cent ]
+    };
+    key <AC09> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               o,               O,              oe,              OE ]
+    };
+    key <AC10> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               i,               I,     icircumflex,     Icircumflex ]
+    };
+    key <AC11> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [     apostrophe,         quotedbl,           minus,          emdash ]
+    };
+    key <AB01> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               z,               Z ]
+    };
+    key <AB02> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               x,               X ]
+    };
+    key <AB03> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               m,               M ]
+    };
+    key <AB04> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               c,               C,            less,   guillemotleft ]
+    };
+    key <AB05> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               v,               V ]
+    };
+    key <AB06> {
+        type= "ALPHABETIC",
+        symbols[Group1]= [               k,               K ]
+    };
+    key <AB07> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [               l,               L,         greater,  guillemotright ]
+    };
+    key <AB08> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           comma,        question,      asciitilde,      dead_tilde ]
+    };
+    key <AB09> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [          period,          exclam,             bar,       ampersand ]
+    };
+    key <AB10> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           slash,       backslash,       dead_hook,       dead_hook ]
+    };
+    key <BKSL> {         [           equal,            plus ] };
+    key <I172> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [            less,       braceleft,   guillemotleft,   XF86AudioPlay ]
+    };
+    key <COMP> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [         greater,      braceright,  guillemotright,            Menu ]
+    };
+    key <LSGT> {
+        type= "FOUR_LEVEL",
+        symbols[Group1]= [           equal,            plus,       backslash,             bar ]
+    };
+    key <KPMU> {
+        type= "CTRL+ALT",
+        symbols[Group1]= [     KP_Multiply,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
+    };
+    key <LALT> {         [           Alt_L,          Meta_L ] };
+    key <CAPS> {         [       Caps_Lock ] };
+    key <SCLK> {         [     Scroll_Lock ] };
+    key  <KP7> {         [               7,         KP_Home ] };
+    key  <KP8> {         [               8,           KP_Up ] };
+    key  <KP9> {         [               9,        KP_Prior ] };
+    key <KPSU> {
+        type= "CTRL+ALT",
+        symbols[Group1]= [     KP_Subtract,     KP_Subtract,     KP_Subtract,     KP_Subtract,  XF86Prev_VMode ]
+    };
+    key  <KP4> {         [               4,         KP_Left ] };
+    key  <KP5> {         [               5,        KP_Begin ] };
+    key  <KP6> {         [               6,        KP_Right ] };
+    key <KPAD> {
+        type= "CTRL+ALT",
+        symbols[Group1]= [          KP_Add,          KP_Add,          KP_Add,          KP_Add,  XF86Next_VMode ]
+    };
+    key  <KP1> {         [               1,          KP_End ] };
+    key  <KP2> {         [               2,         KP_Down ] };
+    key  <KP3> {         [               3,         KP_Next ] };
+    key  <KP0> {         [               0,       KP_Insert ] };
+    key <KPDL> {         [      KP_Decimal,       KP_Delete ] };
+    key <LVL3> {
+        type= "ONE_LEVEL",
+        symbols[Group1]= [ ISO_Level3_Shift ]
     };
     key <KATA> {         [        Katakana ] };
     key <HIRA> {         [        Hiragana ] };
@@ -1489,16 +1501,15 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [ ISO_Level3_Shift ]
     };
     key <LNFD> {         [        Linefeed ] };
-    key <HOME> {         [            Home ] };
+    key <HOME> {         [            Home,     asciicircum ] };
     key   <UP> {         [              Up ] };
     key <PGUP> {         [           Prior ] };
     key <LEFT> {         [            Left ] };
     key <RGHT> {         [           Right ] };
-    key  <END> {         [             End ] };
+    key  <END> {         [             End,          dollar ] };
     key <DOWN> {         [            Down ] };
     key <PGDN> {         [            Next ] };
     key  <INS> {         [          Insert ] };
-    key <DELE> {         [          Delete ] };
     key <MUTE> {         [   XF86AudioMute ] };
     key <VOL-> {         [ XF86AudioLowerVolume ] };
     key <VOL+> {         [ XF86AudioRaiseVolume ] };
