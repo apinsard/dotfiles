@@ -1204,7 +1204,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <RTRN> {         [          Return ] };
     key <SPCE> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [           space,           space,      underscore,    nobreakspace ]
+        symbols[Group1]= [           space,             Tab,      underscore,    nobreakspace ]
     };
 
     key <LFSH> {         [         Shift_L ] };
@@ -1212,43 +1212,43 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
 
     key <FK01> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F1,              F1,              F1,              F1, XF86Switch_VT_1 ]
+        symbols[Group1]= [              F1,               1,              F1,              F1, XF86Switch_VT_1 ]
     };
     key <FK02> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F2,              F2,              F2,              F2, XF86Switch_VT_2 ]
+        symbols[Group1]= [              F2,               2,              F2,              F2, XF86Switch_VT_2 ]
     };
     key <FK03> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F3,              F3,              F3,              F3, XF86Switch_VT_3 ]
+        symbols[Group1]= [              F3,               3,              F3,              F3, XF86Switch_VT_3 ]
     };
     key <FK04> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F4,              F4,              F4,              F4, XF86Switch_VT_4 ]
+        symbols[Group1]= [              F4,               4,              F4,              F4, XF86Switch_VT_4 ]
     };
     key <FK05> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F5,              F5,              F5,              F5, XF86Switch_VT_5 ]
+        symbols[Group1]= [              F5,               5,              F5,              F5, XF86Switch_VT_5 ]
     };
     key <FK06> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F6,              F6,              F6,              F6, XF86Switch_VT_6 ]
+        symbols[Group1]= [              F6,               6,              F6,              F6, XF86Switch_VT_6 ]
     };
     key <FK07> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F7,              F7,              F7,              F7, XF86Switch_VT_7 ]
+        symbols[Group1]= [              F7,               7,              F7,              F7, XF86Switch_VT_7 ]
     };
     key <FK08> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F8,              F8,              F8,              F8, XF86Switch_VT_8 ]
+        symbols[Group1]= [              F8,               8,              F8,              F8, XF86Switch_VT_8 ]
     };
     key <FK09> {
         type= "CTRL+ALT",
-        symbols[Group1]= [              F9,              F9,              F9,              F9, XF86Switch_VT_9 ]
+        symbols[Group1]= [              F9,               9,              F9,              F9, XF86Switch_VT_9 ]
     };
     key <FK10> {
         type= "CTRL+ALT",
-        symbols[Group1]= [             F10,             F10,             F10,             F10, XF86Switch_VT_10 ]
+        symbols[Group1]= [             F10,               0,             F10,             F10, XF86Switch_VT_10 ]
     };
     key <FK11> {
         type= "CTRL+ALT",
@@ -1369,7 +1369,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <AC04> {
         type= "FOUR_LEVEL",
-        symbols[Group1]= [               t,               T,          egrave,          Egrave ]
+        symbols[Group1]= [               t,               T,       parenleft,          Egrave ]
     };
     key <AC05> {
         type= "FOUR_LEVEL",
@@ -1380,7 +1380,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               y,               Y ]
     };
     key <AC07> {
-        type= "ALPHABETIC",
+        type= "FOUR_LEVEL",
         symbols[Group1]= [               n,               N,      parenright,      parenright ]
     };
     key <AC08> {
@@ -1454,7 +1454,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <KPMU> {
         type= "CTRL+ALT",
-        symbols[Group1]= [     KP_Multiply,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
+        symbols[Group1]= [        asterisk,     KP_Multiply,     KP_Multiply,     KP_Multiply,   XF86ClearGrab ]
     };
     key <LALT> {         [           Alt_L,          Meta_L ] };
     key <CAPS> {         [       Caps_Lock ] };
@@ -1464,20 +1464,20 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key  <KP9> {         [               9,        KP_Prior ] };
     key <KPSU> {
         type= "CTRL+ALT",
-        symbols[Group1]= [     KP_Subtract,     KP_Subtract,     KP_Subtract,     KP_Subtract,  XF86Prev_VMode ]
+        symbols[Group1]= [           minus,     KP_Subtract,     KP_Subtract,     KP_Subtract,  XF86Prev_VMode ]
     };
     key  <KP4> {         [               4,         KP_Left ] };
     key  <KP5> {         [               5,        KP_Begin ] };
     key  <KP6> {         [               6,        KP_Right ] };
     key <KPAD> {
         type= "CTRL+ALT",
-        symbols[Group1]= [          KP_Add,          KP_Add,          KP_Add,          KP_Add,  XF86Next_VMode ]
+        symbols[Group1]= [            plus,          KP_Add,          KP_Add,          KP_Add,  XF86Next_VMode ]
     };
     key  <KP1> {         [               1,          KP_End ] };
     key  <KP2> {         [               2,         KP_Down ] };
     key  <KP3> {         [               3,         KP_Next ] };
     key  <KP0> {         [               0,       KP_Insert ] };
-    key <KPDL> {         [      KP_Decimal,       KP_Delete ] };
+    key <KPDL> {         [          period,       KP_Delete ] };
     key <LVL3> {
         type= "ONE_LEVEL",
         symbols[Group1]= [ ISO_Level3_Shift ]
@@ -1487,10 +1487,10 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     key <HENK> {         [     Henkan_Mode ] };
     key <HKTG> {         [ Hiragana_Katakana ] };
     key <MUHE> {         [        Muhenkan ] };
-    key <KPEN> {         [        KP_Enter ] };
+    key <KPEN> {         [             Tab ] };
     key <KPDV> {
         type= "CTRL+ALT",
-        symbols[Group1]= [       KP_Divide,       KP_Divide,       KP_Divide,       KP_Divide,      XF86Ungrab ]
+        symbols[Group1]= [           slash,       KP_Divide,       KP_Divide,       KP_Divide,      XF86Ungrab ]
     };
     key <PRSC> {
         type= "PC_ALT_LEVEL2",
