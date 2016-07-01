@@ -587,6 +587,18 @@ xkb_types "complete" {
         level_name[Level3]= "Alt Base";
         level_name[Level4]= "Shift Alt";
     };
+    type "FIVE_LEVEL" {
+        modifiers= Shift+LevelThree+Hyper;
+        map[Shift]= Level2;
+        map[LevelThree]= Level3;
+        map[Shift+LevelThree]= Level4;
+        map[Hyper]= Level5;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Alt Base";
+        level_name[Level4]= "Shift Alt";
+        level_name[Level5]= "Hyper";
+    };
     type "FOUR_LEVEL_ALPHABETIC" {
         modifiers= Shift+Lock+LevelThree;
         map[Shift]= Level2;
@@ -1334,16 +1346,16 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               j,               J ]
     };
     key <AD07> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               f,               F,       parenleft,       parenleft ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               f,               F,       parenleft,       parenleft, 7 ]
     };
     key <AD08> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               u,               U,    bracketright,        NoSymbol ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               u,               U,    bracketright,        NoSymbol, 8 ]
     };
     key <AD09> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               p,               P ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               p,               P,               p,               P, 9 ]
     };
     key <AD10> {
         type= "FOUR_LEVEL",
@@ -1360,16 +1372,16 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               a,               A,          agrave,          Agrave ]
     };
     key <AC02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               s,               S ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               s,               S,               s,               S, asciicircum ]
     };
     key <AC03> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               h,               H,       braceleft,          Eacute ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               h,               H,       braceleft,          Eacute, Up ]
     };
     key <AC04> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               t,               T,       parenleft,       parenleft ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               t,               T,       parenleft,       parenleft, dollar ]
     };
     key <AC05> {
         type= "FOUR_LEVEL",
@@ -1380,16 +1392,16 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               y,               Y ]
     };
     key <AC07> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               n,               N,      parenright,      parenright ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               n,               N,      parenright,      parenright, 4 ]
     };
     key <AC08> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               e,               E,      braceright,            cent ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               e,               E,      braceright,            cent, 5 ]
     };
     key <AC09> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               o,               O,              oe,              OE ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               o,               O,              oe,              OE, 6 ]
     };
     key <AC10> {
         type= "FOUR_LEVEL",
@@ -1404,16 +1416,16 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               z,               Z ]
     };
     key <AB02> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               x,               X ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               x,               X,               x,               X, Left ]
     };
     key <AB03> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               m,               M ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               m,               M,               m,               M, Down]
     };
     key <AB04> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               c,               C,            less,   guillemotleft ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               c,               C,            less,   guillemotleft, Right ]
     };
     key <AB05> {
         type= "ALPHABETIC",
@@ -1424,26 +1436,23 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [               k,               K ]
     };
     key <AB07> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [               l,               L,         greater,  guillemotright ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [               l,               L,         greater,  guillemotright, 1 ]
     };
     key <AB08> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           comma,        question,      asciitilde,      dead_tilde ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [           comma,        question,      asciitilde,      dead_tilde, 2 ]
     };
     key <AB09> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [          period,          exclam,             bar,       ampersand ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [          period,          exclam,             bar,       ampersand, 3 ]
     };
     key <AB10> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [           slash,       backslash,       dead_hook,       dead_hook ]
+        type= "FIVE_LEVEL",
+        symbols[Group1]= [           slash,       backslash,       dead_hook,       dead_hook, 0 ]
     };
     key <BKSL> {         [           equal,            plus ] };
-    key <I172> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [            less,       braceleft,   guillemotleft,   XF86AudioPlay ]
-    };
+    key <I172> {         [         Hyper_L ] };
     key <COMP> {
         type= "FOUR_LEVEL",
         symbols[Group1]= [         greater,      braceright,  guillemotright,            Menu ]
