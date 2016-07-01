@@ -588,16 +588,16 @@ xkb_types "complete" {
         level_name[Level4]= "Shift Alt";
     };
     type "FIVE_LEVEL" {
-        modifiers= Shift+LevelThree+Hyper;
+        modifiers= Shift+LevelThree+Lock;
         map[Shift]= Level2;
         map[LevelThree]= Level3;
         map[Shift+LevelThree]= Level4;
-        map[Hyper]= Level5;
+        map[Lock]= Level5;
         level_name[Level1]= "Base";
         level_name[Level2]= "Shift";
         level_name[Level3]= "Alt Base";
         level_name[Level4]= "Shift Alt";
-        level_name[Level5]= "Hyper";
+        level_name[Level5]= "Lock";
     };
     type "FOUR_LEVEL_ALPHABETIC" {
         modifiers= Shift+Lock+LevelThree;
@@ -1162,10 +1162,10 @@ xkb_compatibility "complete" {
         action= LockMods(modifiers=LevelFive);
     };
     interpret Caps_Lock+AnyOfOrNone(all) {
-        action= LockMods(modifiers=Lock);
+        action= SetMods(modifiers=Lock,clearLocks);
     };
     interpret Any+Exactly(Lock) {
-        action= LockMods(modifiers=Lock);
+        action= SetMods(modifiers=Lock,clearLocks);
     };
     interpret Any+AnyOf(all) {
         action= SetMods(modifiers=modMapMods,clearLocks);
@@ -1452,7 +1452,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
         symbols[Group1]= [           slash,       backslash,       dead_hook,       dead_hook, 0 ]
     };
     key <BKSL> {         [           equal,            plus ] };
-    key <I172> {         [         Hyper_L ] };
+    key <I172> {         [       Caps_Lock ] };
     key <COMP> {
         type= "FOUR_LEVEL",
         symbols[Group1]= [         greater,      braceright,  guillemotright,            Menu ]
@@ -1660,7 +1660,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     modifier_map Shift { <LFSH> };
     modifier_map Shift { <RTSH> };
     modifier_map Mod1 { <LALT> };
-    modifier_map Lock { <CAPS> };
+    modifier_map Lock { <I172> };
     modifier_map Mod2 { <NMLK> };
     modifier_map Mod5 { <LVL3> };
     modifier_map Control { <RCTL> };
