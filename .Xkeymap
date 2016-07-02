@@ -1207,13 +1207,13 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     name[group1]="English (US, alternative international)";
 
     key  <ESC> {         [          Escape ] };
-    key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
+    key  <TAB> {         [          Escape ] };
     key <RTSH> {         [         Shift_R ] };
     key <RCTL> {         [       Control_R ] };
 
     key <DELE> {         [          Delete ] };
-    key <BKSP> {         [       BackSpace,       BackSpace ] };
-    key <RTRN> {         [          Return ] };
+    key <BKSP> {         [       BackSpace,          Delete ] };
+    key <RTRN> {         [          Return,          Escape ] };
     key <SPCE> {
         type= "FOUR_LEVEL",
         symbols[Group1]= [           space,             Tab,      underscore,    nobreakspace ]
