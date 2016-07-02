@@ -1453,10 +1453,7 @@ xkb_symbols "pc+us(alt-intl)+inet(evdev)" {
     };
     key <BKSL> {         [           equal,            plus ] };
     key <I172> {         [       Caps_Lock ] };
-    key <COMP> {
-        type= "FOUR_LEVEL",
-        symbols[Group1]= [         greater,      braceright,  guillemotright,            Menu ]
-    };
+    key <COMP> {         [             Tab ] };
     key <LSGT> {
         type= "FOUR_LEVEL",
         symbols[Group1]= [           equal,            plus,       backslash,             bar ]
