@@ -31,7 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -45,19 +45,27 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo tmux)
+plugins=(django git pip sudo tmux)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=".:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.8.4"
+export PATH=".:$HOME/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/local/sbin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export WORKON_HOME=~/.venvs
 source /usr/bin/virtualenvwrapper.sh
 
-source $ZSH/oh-my-zsh.sh
+mkncd() {
+  mkdir -pv $1
+  cd $1
+}
 
-base_pythonpath=$PYTHONPATH
+whichrepo() {
+  echo "curl -s http://ports.funtoo.org/packages.xml | xmllint --xpath" "/packages/category[@name='$1']/package[@name='$2']/@repository" -
+  curl -s http://ports.funtoo.org/packages.xml | xmllint --xpath "/packages/category[@name='$1']/package[@name='$2']/@repository" -
+}
 
 wksp() {
   tmux splitw -h -l90
